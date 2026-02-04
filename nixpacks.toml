@@ -1,11 +1,11 @@
 [setup]
 pkgs = ["nodejs_20", "npm_10", "openssl"]
 
-[phases.setup]
-nixPkgs = ["nodejs_20", "npm_10", "openssl"]
-
 [phases.install]
-cmds = ["npm ci"]
+cmds = ["npm install --legacy-peer-deps"]
 
 [phases.build]
-cmds = ["npx prisma generate", "npm run build"]
+cmds = ["npm run build"]
+
+[start]
+cmd = "npm run start"
