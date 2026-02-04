@@ -1,5 +1,8 @@
 [setup]
-pkgs = ["nodejs_20", "npm_10", "openssl"]
+pkgs = ["nodejs_22_x", "npm_10", "openssl"]
+
+[phases.setup]
+nixPkgs = ["nodejs_22_x", "npm_10", "openssl"]
 
 [phases.install]
 cmds = ["npm install --legacy-peer-deps"]
