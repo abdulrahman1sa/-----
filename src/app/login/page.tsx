@@ -57,7 +57,7 @@ export default function LoginPage() {
                             onClick={handleGoogleLogin}
                             disabled={isLoading}
                             className={`
-                                w-full flex items-center justify-center gap-6 py-6 px-4 border-4 border-[var(--foreground)] transition-none relative group
+                                w-full flex items-center justify-center gap-6 py-5 px-4 border-4 border-[var(--foreground)] transition-none relative group
                                 ${isLoading ? 'bg-[var(--foreground)]/20 cursor-wait' : 'bg-[var(--background)] hover:bg-[var(--foreground)] hover:text-[var(--background)] shadow-[8px_8px_0_0_var(--foreground)] active:translate-y-2 active:shadow-none'}
                             `}
                         >
@@ -69,13 +69,23 @@ export default function LoginPage() {
                                 <div className="bg-green-500"></div>
                             </div>
 
-                            <span className="font-black text-xl md:text-2xl uppercase tracking-tighter">
-                                {isLoading ? 'جاري_التجهيز...' : 'دخول_عبر_جيميل'}
+                            <span className="font-black text-lg uppercase tracking-tighter">
+                                {isLoading ? 'جاري_المعالجة' : 'دخول_عبر_جيميل'}
                             </span>
+                        </button>
 
-                            {isLoading && (
-                                <div className="absolute inset-0 bg-[var(--foreground)] opacity-10 animate-pulse"></div>
-                            )}
+                        <button
+                            onClick={() => alert('نظام_أبل: جاري التحقق من الهوية... (AUTH_APPLE_PENDING)')}
+                            disabled={isLoading}
+                            className={`
+                                w-full flex items-center justify-center gap-6 py-5 px-4 border-4 border-[var(--foreground)] transition-none relative group
+                                ${isLoading ? 'bg-[var(--foreground)]/20 cursor-wait' : 'bg-[var(--background)] hover:bg-[var(--foreground)] hover:text-[var(--background)] shadow-[8px_8px_0_0_var(--foreground)] active:translate-y-2 active:shadow-none'}
+                            `}
+                        >
+                            <div className="text-2xl opacity-80 group-hover:opacity-100">🍎</div>
+                            <span className="font-black text-lg uppercase tracking-tighter">
+                                {isLoading ? 'جاري_المعالجة' : 'دخول_عبر_أبل'}
+                            </span>
                         </button>
                     </div>
 
