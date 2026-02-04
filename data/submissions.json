@@ -1,0 +1,41 @@
+[
+  {
+    "id": "1770206507588",
+    "platform": "telegram",
+    "college": "كلية العلوم",
+    "subject": "الفيزياء",
+    "sectionNumber": "212",
+    "groupLink": "https://t.me/OverwatchNR",
+    "groupName": "رياضيات",
+    "submitterName": "مجهول",
+    "status": "approved",
+    "createdAt": "2026-02-04T12:01:47.588Z",
+    "approvedAt": "2026-02-04T12:07:48.563Z"
+  },
+  {
+    "id": "1770207412768",
+    "platform": "telegram",
+    "college": "كلية الطب",
+    "subject": "علوم الحاسوب",
+    "sectionNumber": "101",
+    "groupLink": "https://t.me/un_taif1",
+    "groupName": "الرياضيات ",
+    "submitterName": "مجهول",
+    "status": "approved",
+    "createdAt": "2026-02-04T12:16:52.768Z",
+    "approvedAt": "2026-02-04T12:17:06.081Z"
+  },
+  {
+    "id": "1770207485807",
+    "platform": "telegram",
+    "college": "كلية التجارة",
+    "subject": "اللغة العربية",
+    "sectionNumber": "2002",
+    "groupLink": "https://t.me/un_taif1",
+    "groupName": "الشعبه1",
+    "submitterName": "مجهول",
+    "status": "approved",
+    "createdAt": "2026-02-04T12:18:05.807Z",
+    "approvedAt": "2026-02-04T12:18:14.963Z"
+  }
+]
